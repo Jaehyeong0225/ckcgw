@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>교회목록 — 워싱턴 지역 한인교회협의회</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <div class="logo-cross">✝</div>
+      <div class="logo-text">워싱턴 지역 한인교회협의회<small>Council of Korean Churches — Greater Washington</small></div>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="about.html">소개</a></li>
+      <li><a href="churches.html" class="active">교회목록</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="news.html">공지사항</a></li>
+      <li><a href="contact.html">오시는 길</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="breadcrumb"><span>교회목록</span></div>
+    <h1>교회목록</h1>
+    <p>워싱턴 지역 한인 교회를 찾아보세요</p>
+  </div>
+  <div class="page-gold-line"></div>
+
+  <div class="section-wrap">
+    <div class="container">
+      <div class="search-bar reveal">
+        <input type="text" id="churchSearch" placeholder="🔍  교회 이름 또는 지역 검색..." />
+        <button class="filter-btn active" data-region="all" onclick="filterChurchRegion('all', this)">전체</button>
+        <button class="filter-btn" data-region="dc" onclick="filterChurchRegion('dc', this)">D.C.</button>
+        <button class="filter-btn" data-region="maryland" onclick="filterChurchRegion('maryland', this)">Maryland</button>
+        <button class="filter-btn" data-region="virginia" onclick="filterChurchRegion('virginia', this)">Virginia</button>
+      </div>
+
+      <div class="churches-grid" id="churchGrid">
+        <div class="church-card reveal" data-region="virginia">
+          <div class="church-name">○○ 한인교회</div>
+          <div class="church-pastor">담임: 홍길동 목사</div>
+          <div class="church-info-row">📍 1234 Example Rd, Fairfax, VA 22030</div>
+          <div class="church-info-row">🕐 주일예배: 오전 11:00</div>
+          <div class="church-info-row">📞 (703) 000-0000</div>
+          <span class="church-tag">Virginia</span>
+        </div>
+        <div class="church-card reveal" data-region="maryland">
+          <div class="church-name">△△ 장로교회</div>
+          <div class="church-pastor">담임: 김철수 목사</div>
+          <div class="church-info-row">📍 5678 Sample Ave, Rockville, MD 20850</div>
+          <div class="church-info-row">🕐 주일예배: 오전 10:30 / 오후 1:00</div>
+          <div class="church-info-row">📞 (301) 000-0000</div>
+          <span class="church-tag">Maryland</span>
+        </div>
+        <div class="church-card reveal" data-region="dc">
+          <div class="church-name">□□ 감리교회</div>
+          <div class="church-pastor">담임: 이영희 목사</div>
+          <div class="church-info-row">📍 900 Test Blvd NW, Washington, DC 20001</div>
+          <div class="church-info-row">🕐 주일예배: 오전 11:00</div>
+          <div class="church-info-row">📞 (202) 000-0000</div>
+          <span class="church-tag">D.C.</span>
+        </div>
+        <div class="church-card reveal" data-region="virginia">
+          <div class="church-name">◇◇ 침례교회</div>
+          <div class="church-pastor">담임: 박민수 목사</div>
+          <div class="church-info-row">📍 321 Demo St, McLean, VA 22101</div>
+          <div class="church-info-row">🕐 주일예배: 오전 10:00 / 오후 2:00</div>
+          <div class="church-info-row">📞 (703) 000-0001</div>
+          <span class="church-tag">Virginia</span>
+        </div>
+        <div class="church-card reveal" data-region="maryland">
+          <div class="church-name">▽▽ 순복음교회</div>
+          <div class="church-pastor">담임: 최지연 목사</div>
+          <div class="church-info-row">📍 111 Placeholder Way, Gaithersburg, MD 20878</div>
+          <div class="church-info-row">🕐 주일예배: 오전 11:00</div>
+          <div class="church-info-row">📞 (240) 000-0000</div>
+          <span class="church-tag">Maryland</span>
+        </div>
+        <div class="church-card reveal" data-region="virginia">
+          <div class="church-name">★★ 성결교회</div>
+          <div class="church-pastor">담임: 정준호 목사</div>
+          <div class="church-info-row">📍 777 Example Ln, Annandale, VA 22003</div>
+          <div class="church-info-row">🕐 주일예배: 오전 10:30</div>
+          <div class="church-info-row">📞 (703) 000-0002</div>
+          <span class="church-tag">Virginia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">워싱턴 지역 한인교회협의회</div>
+    <div class="footer-en">COUNCIL OF KOREAN CHURCHES — GREATER WASHINGTON</div>
+    <a href="mailto:info@ckcgw.org">info@ckcgw.org</a> &nbsp;·&nbsp; <a href="https://ckcgw.org">ckcgw.org</a>
+    <div class="footer-divider"></div>
+    © 2026 CKCGW. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
